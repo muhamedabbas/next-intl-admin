@@ -68,7 +68,9 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md",
+    "examples"
   ],
   "exports": {
     ".": {
