@@ -1,0 +1,88 @@
+{
+  "name": "next-intl-admin",
+  "version": "1.0.0",
+  "description": "A comprehensive translation management system for Next.js applications with next-intl integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SciVerraTech/next-intl-admin.git"
+  },
+  "homepage": "https://next-intl-admin.sciverra.com",
+  "bugs": {
+    "url": "https://github.com/SciVerraTech/next-intl-admin/issues",
+    "email": "support@sciverra.com"
+  },
+  "keywords": [
+    "nextjs",
+    "next-intl",
+    "internationalization",
+    "i18n",
+    "translation",
+    "admin",
+    "management",
+    "react",
+    "typescript"
+  ],
+  "author": "Mohamed Abbas <muhamedabbas74@gmail.com>",
+  "contributors": [
+    "SciVerraTech Coop. <info@sciverra.com>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && npm run build:package",
+    "build:package": "tsc --project tsconfig.build.json",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "test": "node scripts/test-package.js",
+    "prepublishOnly": "npm run clean && npm run build:package",
+    "prepare": "npm run build:package"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next-intl": "^4.3.4",
+    "lucide-react": "^0.536.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.10",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19",
+    "typescript": "^5.9.2",
+    "tailwindcss": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  },
+  "peerDependencies": {
+    "next": ">=14.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "next-intl": ">=3.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./lib": {
+      "types": "./dist/lib/index.d.ts",
+      "default": "./dist/lib/index.js"
+    },
+    "./styles": "./dist/styles.css"
+  }
+}
