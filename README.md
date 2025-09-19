@@ -2,9 +2,12 @@
 
 A comprehensive, production-ready translation management system for Next.js applications with seamless next-intl integration.
 
-[![npm version](https://badge.fury.io/js/next-intl-admin.svg)](https://badge.fury.io/js/next-intl-admin)
+[![npm version](https://img.shields.io/npm/v/next-intl-admin.svg)](https://www.npmjs.com/package/next-intl-admin)
+[![npm downloads](https://img.shields.io/npm/dm/next-intl-admin.svg)](https://www.npmjs.com/package/next-intl-admin)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> **🎉 Now Available on NPM!** Install with `npm install next-intl-admin`
 
 ## 🚀 Features
 
@@ -30,7 +33,32 @@ yarn add next-intl-admin
 pnpm add next-intl-admin
 ```
 
-## 🛠️ Quick Setup
+**Latest Version**: `1.0.0` - [View on NPM](https://www.npmjs.com/package/next-intl-admin)
+
+## ⚡ Quick Start
+
+Get up and running in 2 minutes:
+
+```bash
+# Install the package
+npm install next-intl-admin
+
+# Use in your Next.js app
+import { StandaloneTranslationManager } from 'next-intl-admin';
+
+export default function TranslationsPage() {
+  return (
+    <StandaloneTranslationManager
+      supportedLocales={['en', 'ar']}
+      autoExport={true}
+    />
+  );
+}
+```
+
+No backend required! The standalone mode works entirely in the browser.
+
+## 🛠️ Full Setup
 
 ### 1. Configure Next.js with next-intl
 
@@ -345,6 +373,22 @@ export default function AdminPage() {
 }
 ```
 
+### Standalone Mode (No Backend Required)
+
+```typescript
+import { StandaloneTranslationManager } from 'next-intl-admin';
+
+export default function AdminPage() {
+  return (
+    <StandaloneTranslationManager
+      supportedLocales={['en', 'ar', 'fr']}
+      storageType="localStorage"
+      autoExport={true}
+    />
+  );
+}
+```
+
 ### Advanced Configuration
 
 ```typescript
@@ -523,11 +567,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 Email: support@sciverra.com
-- 🐛 Issues: [GitHub Issues](https://github.com/SciVerraTech/next-intl-admin/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/SciVerraTech/next-intl-admin/discussions)
-- 📚 Documentation: [Full Documentation](https://next-intl-admin.sciverra.com/)
-- 🌐 Company: [SciVerraTech Coop.](https://sciverra.com)
+- 📦 **NPM Package**: [next-intl-admin](https://www.npmjs.com/package/next-intl-admin)
+- 📧 **Email**: muhamedabbas74@gmail.com
+- 🐛 **Issues**: [GitHub Issues](https://github.com/SciVerraTech/next-intl-admin/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/SciVerraTech/next-intl-admin/discussions)
+- 📚 **Documentation**: [Full Documentation](https://next-intl-admin.sciverra.com/)
+- 🌐 **Company**: [SciVerraTech Coop.](https://sciverra.com)
 
 ---
 
@@ -536,5 +581,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Lead Developer: **Mohamed Abbas** <muhamedabbas74@gmail.com>
 
 SciVerraTech Coop. is a technology cooperative focused on creating innovative solutions for scientific and technical applications. We specialize in developing high-quality, open-source tools that empower developers and organizations worldwide.
+
+## 🔄 Recent Updates
+
+### v1.0.0 (Latest) - NPM Release
+- 🎉 **Now available on NPM!** Install with `npm install next-intl-admin`
+- ✅ Complete translation management system
+- ✅ Standalone mode (no backend required)
+- ✅ Full TypeScript support
+- ✅ Beautiful responsive UI
+- ✅ RTL language support
+- ✅ Import/Export functionality
 
 Made with ❤️ for the Next.js community
